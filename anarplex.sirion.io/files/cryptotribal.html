@@ -1,0 +1,866 @@
+<!--<?xml version="1.0" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">-->
+<html>
+	<head>
+		<title>Anarplex</title>
+		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+		<link rel="stylesheet" type="text/css" href="/css/master-3.css" />
+		<script type="text/javascript" src="/js/jquery.js"></script>
+		<script type="text/javascript">
+		<!--//
+			var tagsToReplace = {
+			    '&': '&amp;',
+			    '<': '&lt;',
+			    '>': '&gt;'
+			};
+			function replaceTag(tag) {
+ 			   return tagsToReplace[tag] || tag;
+			}
+
+			function sanitize(str) {
+			    return str.replace(/[&<>]/g, replaceTag);
+			}
+
+			function replace_content(obj, html, content_section){
+				$(obj).html(html);
+				$(obj + " .content_container_class").hide();
+				$(obj + " " + content_section).show();
+				$(obj).fadeIn('slow');
+			}
+
+			function debug(msg){
+				$('#debug').html(msg);
+			}
+
+			function set_permalink(dirname, filename){
+				hostpart = document.location.protocol + "//" + document.location.hostname;
+				localpart = "";
+				linktext = "";
+				if (dirname){
+					if (dirname == "index") {
+						localpart = "/";
+						linktext = "index";
+					}else{
+						localpart = "/" + dirname + "/";
+						linktext = dirname;
+					}
+					if (filename && filename != "index") {
+						localpart = localpart + filename + ".html";
+						linktext = linktext + "=>" + filename;
+					}
+				}else{
+					localpart = document.location.pathname;
+					linktext = localpart;
+				}
+				$('span#permalink a').attr('href', hostpart + localpart);
+				$('span#permalink a').html(sanitize(linktext));
+				$('span#permalink').show();
+			}
+
+			$(document).ready(function() {
+				$('.must_hide').hide();
+				set_permalink();
+				$(document).on("click", "a.page_trigger", function(){
+					href = $(this).attr('href');
+					dirname = href.split('/')[1];
+					if(dirname.length == 0){
+						dirname = "index";
+						filename = "index";
+					}else if(dirname.indexOf(".html") >= 0){
+						filename = dirname.split('.')[0];
+						dirname = "index";
+					}else{
+						filename = href.split('/')[2].split('.')[0];
+					}
+					
+					if (filename.length == 0) {
+						filename = "index";
+					}
+
+					set_permalink(dirname, filename);
+					container = '.content_' + dirname;
+					content_section = '.content_' + dirname + '_' + filename;
+					// check if the new container even exists, if not: default to content_notfound
+					if( $(container + " input.page_name").attr('value') != container ){
+						container = ".content_notfound";
+						content_section = ".content_notfound_index";
+					}
+					
+					current = $('#content_container input.page_name').attr('value');
+					if ( current != container) {
+						$('#content_container').fadeOut('slow', function(){
+							replace_content('#content_container', $(container).html(), content_section)
+						});
+					}else{
+						$("#content_container .content_container_class").not(content_section).hide(1, function(){
+							$("#content_container " + content_section).hide().fadeIn('slow');
+						}).finish();
+					}
+					return false;
+				});
+			});
+		//-->
+		</script>
+	</head>
+	<body>
+		<div id="page_container">
+			<div id="header_container">
+				<span class="bar" style="top:1em;">=================================================================================================================================</span>
+				<a id="home_logo" href="/"  class="page_trigger"><img src="/img/gamma-trans.png" alt="" border="0" /></a>
+				<span class="bar" style="bottom:1em;">=================================================================================================================================</span>
+
+				<div id="header_content">
+					<a href="/" id="page_heading" class="page_trigger">anarplex.net</a>
+					<div id="header_text">
+						files &amp; projects related to: crypto-tribes, phyles, crypto-anarchy, agorism<br/>
+						provider of darknet services
+					</div>
+				</div>
+
+				<div id="header_menu">
+					<ul class="menu_list">
+						<li class="menu_item menu_left"><a href="/agorairc/"  class="page_trigger" id="agorairc"><span class="hash">#</span>Agora Irc</a></li>
+						<li class="menu_item menu_left"><a href="/files/"     class="page_trigger" id="files"   ><span class="hash">#</span>Files    </a></li>
+						<li class="menu_item menu_left"><a href="/projects/"  class="page_trigger" id="projects"><span class="hash">#</span>Projects </a></li>
+						<li class="menu_item menu_right"><a href="/services/" class="page_trigger" id="services"><span class="hash">#</span>Services </a></li>
+						<li class="menu_item menu_right"><a href="/log/"      id="varlog"  ><span class="hash">#</span>/var/log </a></li>
+					</ul>
+				</div>		
+			</div>
+
+			<div id="content_container">			
+				<!-- Visible content -->
+			<!-- Directory: files -->
+			<div class="page_content content_files">
+				<input type="hidden" class="page_name" name="page_name" value=".content_files" />
+				<fieldset class="content_menu"><legend>Files:</legend>
+					<div>
+						<ul>
+							<li><a href="/files/cryptotribal.html" class="page_trigger"><span class="hash">&#8658;</span>Crypto-Tribal</a></li>
+							<li><a href="/files/secondrealm.html" class="page_trigger"><span class="hash">&#8658;</span>Second Realm</a></li>
+							<li><a href="/files/lotnv.html" class="page_trigger"><span class="hash">&#8658;</span>LoTNV / RuleScaping</a></li>
+							<li><a href="/files/fau.html" class="page_trigger"><span class="hash">&#8658;</span>Free &amp; Unashamed</a></li>
+							<li><a href="/files/entertainment.html" class="page_trigger"><span class="hash">&#8658;</span>Entertainment</a></li>
+							<li><a href="/files/miscellaneous.html" class="page_trigger"><span class="hash">&#8658;</span>Miscellaneous</a></li>
+						</ul>
+					</div>
+				</fieldset>
+				<!-- File: files/cryptotribal.html -->
+				<div class="content_container_class content_files_cryptotribal index">
+					<fieldset class="content_box">
+						<legend>Crypto-Tribal writings</legend>
+						<ul>
+							<li>The Treasure which is Privacy: <a href="/hosted/files/TreasurePrivacy.txt">link</a>.</li>
+							<li>Aristocracy of Action: <a href="/hosted/files/aoa.html">link</a>, <a href="/hosted/files/aoa.txt">original</a>.</li>
+							<li>Aristokratie der Tat, deutsch: <a href="/hosted/files/aoa-de.txt">TXT</a>.</li>
+							<li>Toward a Digital Private Economy: <a href="/hosted/files/Toward_A_Private_Digital_Economy/index.html">link</a>.</li>
+							<li>Two Realms: <a href="/hosted/files/two_realms.html">link</a>.</li>
+							<li>A Lodging of Wayfaring Men: <a href="/hosted/files/A_Lodging_of_Wayfaring_Men.pdf">link</a>.</li>
+						</ul>
+					</fieldset>
+				</div>
+				<!-- File ends -->
+				<!-- File: files/entertainment.html -->
+				<div class="content_container_class content_files_entertainment hidden">
+					<fieldset class="content_box">
+						<legend>Entertainment</legend>
+						<ul>
+							<li>Last Trumpet Project: <a href="/hosted/files/last_trumpet/LTP.pdf">pdf</a>,
+													<a href="/hosted/files/last_trumpet/LTP.html">html</a>,
+													<a href="/hosted/files/last_trumpet/LTP.prc">prc</a>,
+													<a href="/hosted/files/last_trumpet/LTP-titlepage.jpg">Cover</a>.<br/><br/></li>
+							<li>#agora (the book): <a href="/hosted/files/agora.txt">link</a>.</li>
+							<li>A Lodging of Wayfaring Men: <a href="/hosted/files/A_Lodging_of_Wayfaring_Men.pdf">link</a>.</li>
+							<li>Alongside Night: <a href="/hosted/files/Alongside_Night_free30.pdf">link</a>.</li>
+						</ul>
+					</fieldset>
+				</div>
+				<!-- File ends -->
+				<!-- File: files/fau.html -->
+				<div class="content_container_class content_files_fau hidden">
+					<fieldset class="content_box">
+						<legend>Free &amp; Unashamed</legend>
+						<ul>
+							<li>A No-Holds-Barred Guide For The Unemployed But Not Helpless: <a href="/hosted/files/0008_UnemployedGuide.pdf">link,</a> <a href="/hosted/files/0008_UnemployedGuide.pdf.asc">Signature</a>.</li>
+							<li>How to End All Wars: <a href="/hosted/files/0007_End_All_Wars.pdf">link,</a> <a href="/hosted/files/0007_End_All_Wars.pdf.asc">Signature</a>.</li>
+							<li>Fifty Things to do Now: <a href="/hosted/files/fiftythings.html">link</a>.</li>
+							<li>Building Liberty: <a href="/hosted/files/buildingliberty.html">link</a>.</li>
+							<li>Follow up note 1: <a href="/hosted/files/followup1.html">link</a>.</li>
+							<li>A Declaration of Separation: <a href="/hosted/files/declarationseparation.html">link</a>.</li>
+							<li>An Invitation: <a href="/hosted/files/AnInvitation.html">link</a>.</li>
+							<li>We moved again: <a href="/hosted/files/movedagain.html">link</a>.</li>
+						</ul>
+					</fieldset>
+				</div>
+				<!-- File ends -->
+				<!-- File: files/index.html -->
+				<div class="content_container_class content_files_index hidden">
+					<fieldset class="content_box">
+						<legend>Files</legend>
+						Anarplex hosts a couple of files and projects from the realm of darknets, crypto-tribes, cryptoanarchism and related subjects.
+						<br/>
+						Please navigate to the file sections on the right. 
+					</fieldset>
+				</div>
+				<!-- File ends -->
+				<!-- File: files/lotnv.html -->
+				<div class="content_container_class content_files_lotnv hidden">
+					<fieldset class="content_box">
+						<legend>LoTNV / RuleScaping</legend>
+						LoTNV (Lodging of the Trans-National Vanguard) was a project that researched alternative architecture and rulescaping. It has now become part of other projects
+						and thus the website was abandoned. You find their central writings here:
+						<ul>
+							<li>A Networked Tribe of Minds: Who we are. <a href="/hosted/files/lotnv/who_we_are.html">link</a></li>
+							<li>Discovering the Future by Experiment: How We Live. <a href="/hosted/files/lotnv/how_we_live.html">link</a></li>
+							<li>Agreements for Networked Societies: Beyond Law. <a href="/hosted/files/lotnv/beyond_law.html">link</a></li>
+							<li>RuleScape: Dynamic peaceful order in societies. <a href="/hosted/files/lotnv/rulescape.html">link</a></li>
+						</ul> 
+					</fieldset>
+				</div>
+				<!-- File ends -->
+				<!-- File: files/miscellaneous.html -->
+				<div class="content_container_class content_files_miscellaneous hidden">
+					<fieldset class="content_box">
+						<legend>Miscellaneous</legend>
+						<ul>
+							<li>Bridging the Gap: <a href="/hosted/files/bridging_the_gap.txt">link</a></li>
+							<li>Common Economic Protocols: <a href="/hosted/files/TheCommonEconomicProtocols.pdf">link</a>.</li>
+							<li>Common Economic Protocols, The Maxims: <a href="/hosted/files/TheMaxims.pdf">link</a>.</li>
+						</ul>
+					</fieldset>
+				</div>
+				<!-- File ends -->
+				<!-- File: files/secondrealm.html -->
+				<div class="content_container_class content_files_secondrealm hidden">
+					<fieldset class="content_box">
+						<legend>Second Realm</legend>
+						<ul>
+							<li>Markdown: <a href="/hosted/files/secondrealm/secondrealm.md">link</a></li>
+							<li>HTML: <a href="/hosted/files/secondrealm/secondrealm.html">link</a></li>
+							<li>PDF: <a href="/hosted/files/secondrealm/secondrealm.pdf">link</a></li>
+							<li>ePub: <a href="/hosted/files/secondrealm/secondrealm.epub">link</a></li>
+							<li>Mobi: <a href="/hosted/files/secondrealm/secondrealm.mobi">link</a></li>
+							<li>The original introductory blog-post: <a href="/hosted/files/secondrealm/blog_post.html">link</a></li>
+						</ul>
+						If you like this book, please send us some Bitcoin to:<br/>
+						<b>1DrjUiCT4Wzij8hLYBTYmfPubZMNf2PubU</b>
+					</fieldset>
+				</div>
+				<!-- File ends -->
+
+			</div>
+			<!-- Directory ends -->
+			</div>
+
+			<span id="permalink" class="hidden">#<a href="/">&nbsp;</a></span>
+			<div id="page_copyright">
+				copyleft 2010-2013 Staff.Anarplex || CoL: CEP-1.1, CG-1.0, G23-2.2, UMBRA-0.3
+			</div>
+		</div>
+
+
+		<div id="other_content" class="hidden">
+			<!-- Pages begin -->
+
+
+			<!-- Directory: . -->
+			<div class="page_content content_index">
+				<input type="hidden" class="page_name" name="page_name" value=".content_index" />				
+				<!-- File: ./index.html -->
+				<div class="content_container_class content_index_index index">
+					<fieldset class="content_box_wide">
+						<legend>This is Anarplex.net</legend>
+						We host files &amp; projects related to crypto-anarchy, phyles, agorism and related subject - 
+						and offer various services related to crypto-tribes and darknets.<br/>
+						This is also the home of the #agora IRC server.
+					</fieldset>
+					<fieldset class="content_box_wide">
+						<legend>Alternative addresses</legend>
+						This server is available through:
+						<ul>
+							<li>The Clearnet: <a href="/">anarplex.net</a></li>
+							<li>Tor darknet: <a href="http://y5fmhyqdr6r7ddws.onion/">y5fmhyqdr6r7ddws.onion</a></li>
+							<li>I2P darknet (ECC key format): <a href="http://ecc-anarplex.i2p/">ecc-anarplex.i2p</a> (<a href="http://127.0.0.1:7657/susidns/addressbook.jsp?book=private&hostname=ecc-anarplex.i2p&destination=FSQksw2EMNoOx3GW2PQrPfSmTFGoHrEd9bGhLqsvmxmxVcRWYV~xig~8IcO5z~AQ9d8xulErDV2WVJK1Z8RBLHaYGdAZOEcJckALvPdF2Yun2vjEtRMDScXabzK1QdROepSEfEm5B5OAwSZRowOoZx2yo~TORp3EPwSuCJufATY-Q1JH7-egpKIbpNR8JzFpGAJ3dyCdaPxtdY2drZ--P7F5vpirGX8BJ~lsCKsMdLSI-UQnSvnu7jjVAYf6Y0TO~Cau1K~8M8cLNR6QWPK4PmVw36Vj5ZP5Vif3LkdTNF9QQ8ups6EzE2ZN7tfw7yHV2bh-W5Re5RZgLS3F~SnPoQBcA1ImqXkq97StjAnG8tHwAjX2qP5ofglEDzVeJRQ4AKfmNLB-~wG5e3MYdvUHtsZwl1hz4TX-eIoeddKKgs7HBgBLAJk8Y2A5J1~3y8PLKiuW4JUsmDG8qTriyJxqVgapq8RJGMswUyOuxffq6L2E67SzABrnsiLcELqNMpymBQAIAAMAAB4o3R8=#add">add to local address book</a>) 
+							<li>I2P darknet (old key format): <a href="http://anarplex.i2p/">anarplex.i2p</a> 
+								(<a href="http://127.0.0.1:7657/susidns/addressbook.jsp?book=private&hostname=anarplex.i2p&destination=PAqUUlki9uzo46GBx6~SqkwB7aTX0xmXNvbrEU6mmXiu8VBIP6jW9x~66m5npCBnHXR6eqrXhgsAtqxQc8qPwQH2JXVa8PrDJ8wo9PzAuDCtpPPaZRIh4DNz7wqRQZSiMtFqj4s3iiP44tSWuR7Tptz4QVZ8ItkLzHFB5ZD4u0h4f9e1n9ZxzWQXw3KHXCeVYkQ9lmK~aGaaYs6aOnk5-n7rqrpcG5T1r0WedWwvL5DHIQP8P7G~72NTz0ZhZUP7ZMtMJGk0MOt1y7x4jCimJnaoL06LghzikWvtEWFpd0fpH1AqCF9k~sZJk294fsJaaela~NKdwwWUamQHUM6Nom5GqJUVWnXpZu28ud96v2sQUAdEN2xcqWvo5iVDGk5OFBgIDL2fT3OFh9qEC6Pi6TSWT2K5~RYTOYpn1wCeOb574jVeH0tionP2EYfdwX7fQ98QUFJ8srtd2k65UbBtwJIGn7yP71EQmHe6km8bYqxO2VMZtFuufTAFDwqDHDrpAAAA#add">add to local address book</a>, <a href="http://4qingryacppi5ed2vk2626qipri3d7c2v6iw3vr55zy6c2uc66za.b32.i2p/">b32-address</a>)
+							</li>
+							<li>CG darknet: <a href="http://anarplex.cryptogroup/">anarplex.cryptogroup</a> (172.31.254.69 if you don't have the CG-DNS configured)</li>
+						</ul>
+						Since we have had several downtimes of our clearnet gateways, all regular visitors are advised to
+						bookmark the darknet addresses as well.
+					</fieldset>
+				</div>
+				<!-- File ends -->
+			</div>
+			<!-- Directory ends -->
+
+			<!-- Directory: projects -->
+			<div class="page_content content_projects">
+				<input type="hidden" class="page_name" name="page_name" value=".content_projects" />	
+				<fieldset class="content_menu"><legend>Projects:</legend>
+					<div>
+						<ul>
+							<li><a href="/projects/index.html" class="page_trigger"><span class="hash">&#8658;</span>Overview</a></li>
+							<li><a href="/projects/secondrealm.html" class="page_trigger"><span class="hash">&#8658;</span>Second Realm</a></li>
+							<li><a href="/projects/rer.html" class="page_trigger"><span class="hash">&#8658;</span>RER</a></li>
+							<li><a href="/projects/xposts.html" class="page_trigger"><span class="hash">&#8658;</span>X-Posts</a></li>
+						</ul>
+					</div>
+				</fieldset>			
+				<!-- File: projects/index.html -->
+				<div class="content_container_class content_projects_index index">
+					<fieldset class="content_box">
+						<legend>Overview</legend>
+						Anarplex.net hosts some projects related to crypto-anarchy and second realm. Please check out the resources. For comments, please
+						contact the project head - not us.
+					</fieldset>
+					<fieldset class="content_box">
+						<legend>Note</legend>
+						This section is work in progress and defined by errors and incompleteness.
+					</fieldset>
+				</div>
+				<!-- File ends -->
+
+				<!-- File: projects/secondrealm.html -->
+				<div class="content_container_class content_projects_secondrealm hidden">
+					<fieldset class="content_box">
+						<legend>Second Realm</legend>
+						After Second Realm has decided to not operate its own website any longer, we moved the wiki and resources to anarplex.
+						<ul>
+							<li><a href="/files/secondrealm.html" class="page_trigger">Second Realm - The booklet</a></li>
+							<li>The original introductory blog-post: <a href="/hosted/files/secondrealm/blog_post.html">link</a></li>
+							<li>The Second Realm wiki: <a href="/hosted/wiki/secondrealm">Wiki</a></li>
+						</ul>
+					</fieldset>
+				</div>
+				<!-- File ends -->
+
+				<!-- File: projects/rer.html -->
+				<div class="content_container_class content_projects_rer hidden">
+					<fieldset class="content_box">
+						<legend>Reality Exploit Roundtable</legend>
+						Reality Exploit Roundtable is a podcast published by <a href="http://agoristradio.com" target="__blank">Agoristradio.com</a>. Anarplex hosts a mirror of it here:
+						<ul>
+							<li>Mirror: <a href="/hosted/rer/index.html">Reality Exploit Roundtable</a></li>
+						</ul>
+					</fieldset>
+				</div>
+				<!-- File ends -->
+
+				<!-- File: projects/xposts.html -->
+				<div class="content_container_class content_projects_xposts hidden">
+					<fieldset class="content_box">
+						<legend>About X-Posts</legend>
+						X-Posts are cross-posts from anarplex affiliated writers. They are stored here mostly to keep them accessible. Since they are
+						of varying topics they don't really fit the Files category.
+					</fieldset>
+					<fieldset class="content_box">
+						<legend>X-Posts</legend>
+						By J. Logan
+						<ul>
+							<li><a href="/hosted/xposts/reality_fiction.html">Reality-Fiction Continuum</a></li>
+							<li><a href="/hosted/xposts/thinking_human.html">Scribbles: Thinking about humans – C4T</a></li>
+							<li><a href="/hosted/xposts/common_truth.html">Scribbles: Common Sense on Truth</a></li>
+						</ul>
+					</fieldset>
+				</div>
+				<!-- File ends -->
+			</div>
+			<!-- Directory ends -->
+
+			<!-- Directory: services -->
+			<div class="page_content content_services">
+				<input type="hidden" class="page_name" name="page_name" value=".content_services" />
+				<fieldset class="content_menu"><legend>Services:</legend>
+					<div>
+						<ul>
+							<li><a href="/services/gammadx.html" class="page_trigger"><span class="hash">&#8658;</span>GammaDX</a></li>
+							<li><a href="/services/darknets.html" class="page_trigger"><span class="hash">&#8658;</span>Darknets</a></li>
+							<li><a href="/services/nodeshell.html" class="page_trigger"><span class="hash">&#8658;</span>Nodes &amp; Shells</a></li>
+							<li><a href="/services/communication.html" class="page_trigger"><span class="hash">&#8658;</span>Communication</a></li>
+							<li><a href="/services/dnca.html" class="page_trigger"><span class="hash">&#8658;</span>Source code hosting</a></li>
+						</ul>
+					</div>
+				</fieldset>
+				<!-- File: services/index.html -->
+				<div class="content_container_class content_services_index index">
+					<fieldset class="content_box">
+						<legend>Services</legend>
+						Anarplex.net offers a variety of services for crypto-tribes and phyles.<br/>
+						Due to current workload we do <b>NOT</b> accept new clients at the moment.
+					</fieldset>
+				</div>
+				<!-- File ends -->
+				<!-- File: services/gammadx.html -->
+				<div class="content_container_class content_services_gammadx hidden">
+					<fieldset class="content_box">
+						<legend>GammaDX</legend>
+						<p>
+							GammaDX is where currently eight darknets and three darknet providers interconnect to enable members of 
+							different tribes to directly communicate and cooperate.
+						</p>
+						<p>
+							What Internet Exchanges are for the public internet, GammaDX is for darknets. It is where most of the tribe's foreign policy takes place - 
+							making Anarplex responsible to keep the peace and implement the policies of our clients.
+						</p>
+						<p>
+							Furthermore Anarplex provides peering services and peer accounting between tribes as well as conflict resolution, network identity 
+							protection, subnet translation and mediation of peering negotiations.
+						</p>
+					</fieldset>
+				</div>
+				<!-- File ends -->
+				<!-- File: services/darknets.html -->
+				<div class="content_container_class content_services_darknets hidden">
+					<fieldset class="content_box">
+						<legend>DarkNets</legend>
+						<p>
+							Anarplex is specialized in operating darknets - private networks on the internet that are layered on top but 
+							hidden from the public internet.
+						</p>
+						<p>
+							Darknets are the premier tool for communication, business and social life of crypto-tribes, providing a protected space ruled by their own
+							jurisdiction and policies.
+						</p>
+						<p>
+							Anarplex serves both in consulting, development, deployment and maintenance of darknets - from ip-space management, routing, gateways, 
+							covers, peers and integrated infrastructure services.
+						</p>
+						<p>
+							Does your tribe look for a new home? Please do not hesitate to contact us.
+						</p>
+					</fieldset>
+				</div>
+				<!-- File ends -->
+				<!-- File: services/nodeshell.html -->
+				<div class="content_container_class content_services_nodeshell hidden">
+					<fieldset class="content_box">
+						<legend>Nodes &amp; Shells</legend>
+						<p>From simple unix-shells to webhosts, dedicated servers or custom multi-homed datacents - Anarplex provides
+							initial processing requirements for darknets and entrepreneurs that are active on multiple networks or just want to be less dependent
+							on single tribes. 
+						</p>
+						<p>
+							Furthermore we provide public-facing hosting and gateway services for tribe-related development, marketing, representation and
+							collaboration projects. From SVN- and Wiki-hosting to full-fledged encrypted webservers - please contact us for a custom offer
+						</p>
+					</fieldset>
+				</div>
+				<!-- File ends -->
+				<!-- File: services/communication.html -->
+				<div class="content_container_class content_services_communication hidden">
+					<fieldset class="content_box">
+						<legend>Communication</legend>
+						<p>Need XMPP/Jabber, E-Mail or IRC services? We operate various systems both for tribe-internal as well as public
+							services.
+						</p>
+						<p>
+							OpenVPN, IPSec or SSH access to your existing darknet? No problem, shared or dedicated termination servers can be procured through
+							Anarplex, or we help you setting up your own infrastructure.
+						</p>
+					</fieldset>
+				</div>
+				<!-- File ends -->
+				
+				<!-- File: services/dnca.html -->
+				<div class="content_container_class content_services_dnca hidden">
+					<fieldset class="content_box">
+						<legend>Source code hosting</legend>
+						<p>
+						We operate a source code hosting via Fossil at:
+						<ul>
+							<li><a href="http://shn3x3whdm5tuut4.onion">shn3x3whdm5tuut4.onion</a></li>
+							<li><a href="http://dnca-anarplex.i2p/?i2paddresshelper=HFg73BTJRihTc9RKS0ysdVuIeYPGHLYUukHnfwAwjG8-f4xMQkZDrBYqyEZ0iwMP1MHxbKCotjKkXT2pZKh1dqv2WYXTjai8coV5VbdN7pTUHKA6ZI6T6ab5hx3ZAb7rcvChgluALX5pbu6S1vmSG7pxdZH2iiSspHdtK-nvCby9PHHvDcFfX3pfMbnK0Wu7ec6AK2Gcp6BNiA~9yZbhVvZAU5dO5zdyHipH1HudvVUyOWqky3ZADn8oqwvLCf5dFkGtTbzM2dlG-PTUCZH3mcXG1S2sdfnPF98GF8xYa6hH3X~qejuVoCwRXIfJvduFzk~FkBB117H0NdZXHQAode4xeV60SUkvmT9ARAsQgEKhxzdmkLZkJVeWzRgzv8RePZqbcu9Pyj4K-NwaAoKVbAqRShRRv7JZ08fc3cOrTfLswGvf6A5JAOI2rWa1CMPEzXie0joRNcgESE0Sc6aCBIl7jKTdGqt-qffPMs39bbahRuk~SCtKVGOU2iRTosxrBQAEAAEAAA==/">dnca-anarplex.i2p</a>
+							(<a href="http://127.0.0.1:7657/susidns/addressbook.jsp?book=private&hostname=dnca-anarplex.i2p&destination=HFg73BTJRihTc9RKS0ysdVuIeYPGHLYUukHnfwAwjG8-f4xMQkZDrBYqyEZ0iwMP1MHxbKCotjKkXT2pZKh1dqv2WYXTjai8coV5VbdN7pTUHKA6ZI6T6ab5hx3ZAb7rcvChgluALX5pbu6S1vmSG7pxdZH2iiSspHdtK-nvCby9PHHvDcFfX3pfMbnK0Wu7ec6AK2Gcp6BNiA~9yZbhVvZAU5dO5zdyHipH1HudvVUyOWqky3ZADn8oqwvLCf5dFkGtTbzM2dlG-PTUCZH3mcXG1S2sdfnPF98GF8xYa6hH3X~qejuVoCwRXIfJvduFzk~FkBB117H0NdZXHQAode4xeV60SUkvmT9ARAsQgEKhxzdmkLZkJVeWzRgzv8RePZqbcu9Pyj4K-NwaAoKVbAqRShRRv7JZ08fc3cOrTfLswGvf6A5JAOI2rWa1CMPEzXie0joRNcgESE0Sc6aCBIl7jKTdGqt-qffPMs39bbahRuk~SCtKVGOU2iRTosxrBQAEAAEAAA==#add">Add to local addressbook</a>)</li>
+						</ul>
+						</p>
+					</fieldset>
+				</div>
+				<!-- File ends -->
+			</div>
+			<!-- Directory ends -->
+
+			<!-- Directory: files -->
+			<div class="page_content content_files">
+				<input type="hidden" class="page_name" name="page_name" value=".content_files" />
+				<fieldset class="content_menu"><legend>Files:</legend>
+					<div>
+						<ul>
+							<li><a href="/files/cryptotribal.html" class="page_trigger"><span class="hash">&#8658;</span>Crypto-Tribal</a></li>
+							<li><a href="/files/secondrealm.html" class="page_trigger"><span class="hash">&#8658;</span>Second Realm</a></li>
+							<li><a href="/files/lotnv.html" class="page_trigger"><span class="hash">&#8658;</span>LoTNV / RuleScaping</a></li>
+							<li><a href="/files/fau.html" class="page_trigger"><span class="hash">&#8658;</span>Free &amp; Unashamed</a></li>
+							<li><a href="/files/entertainment.html" class="page_trigger"><span class="hash">&#8658;</span>Entertainment</a></li>
+							<li><a href="/files/miscellaneous.html" class="page_trigger"><span class="hash">&#8658;</span>Miscellaneous</a></li>
+						</ul>
+					</div>
+				</fieldset>
+				<!-- File: files/index.html -->
+				<div class="content_container_class content_files_index index">
+					<fieldset class="content_box">
+						<legend>Files</legend>
+						Anarplex hosts a couple of files and projects from the realm of darknets, crypto-tribes, cryptoanarchism and related subjects.
+						<br/>
+						Please navigate to the file sections on the right. 
+					</fieldset>
+				</div>
+				<!-- File ends -->
+
+				<!-- File: files/cryptotribal.html -->
+				<div class="content_container_class content_files_cryptotribal hidden">
+					<fieldset class="content_box">
+						<legend>Crypto-Tribal writings</legend>
+						<ul>
+							<li>The Treasure which is Privacy: <a href="/hosted/files/TreasurePrivacy.txt">link</a>.</li>
+							<li>Aristocracy of Action: <a href="/hosted/files/aoa.html">link</a>, <a href="/hosted/files/aoa.txt">original</a>.</li>
+							<li>Aristokratie der Tat, deutsch: <a href="/hosted/files/aoa-de.txt">TXT</a>.</li>
+							<li>Toward a Digital Private Economy: <a href="/hosted/files/Toward_A_Private_Digital_Economy/index.html">link</a>.</li>
+							<li>Two Realms: <a href="/hosted/files/two_realms.html">link</a>.</li>
+							<li>A Lodging of Wayfaring Men: <a href="/hosted/files/A_Lodging_of_Wayfaring_Men.pdf">link</a>.</li>
+						</ul>
+					</fieldset>
+				</div>
+				<!-- File ends -->
+
+				<!-- File: files/secondrealm.html -->
+				<div class="content_container_class content_files_secondrealm hidden">
+					<fieldset class="content_box">
+						<legend>Second Realm</legend>
+						<ul>
+							<li>Markdown: <a href="/hosted/files/secondrealm/secondrealm.md">link</a></li>
+							<li>HTML: <a href="/hosted/files/secondrealm/secondrealm.html">link</a></li>
+							<li>PDF: <a href="/hosted/files/secondrealm/secondrealm.pdf">link</a></li>
+							<li>ePub: <a href="/hosted/files/secondrealm/secondrealm.epub">link</a></li>
+							<li>Mobi: <a href="/hosted/files/secondrealm/secondrealm.mobi">link</a></li>
+							<li>The original introductory blog-post: <a href="/hosted/files/secondrealm/blog_post.html">link</a></li>
+						</ul>
+						If you like this book, please send us some Bitcoin to:<br/>
+						<b>1DrjUiCT4Wzij8hLYBTYmfPubZMNf2PubU</b>
+					</fieldset>
+				</div>
+				<!-- File ends -->
+
+				<!-- File: files/lotnv.html -->
+				<div class="content_container_class content_files_lotnv hidden">
+					<fieldset class="content_box">
+						<legend>LoTNV / RuleScaping</legend>
+						LoTNV (Lodging of the Trans-National Vanguard) was a project that researched alternative architecture and rulescaping. It has now become part of other projects
+						and thus the website was abandoned. You find their central writings here:
+						<ul>
+							<li>A Networked Tribe of Minds: Who we are. <a href="/hosted/files/lotnv/who_we_are.html">link</a></li>
+							<li>Discovering the Future by Experiment: How We Live. <a href="/hosted/files/lotnv/how_we_live.html">link</a></li>
+							<li>Agreements for Networked Societies: Beyond Law. <a href="/hosted/files/lotnv/beyond_law.html">link</a></li>
+							<li>RuleScape: Dynamic peaceful order in societies. <a href="/hosted/files/lotnv/rulescape.html">link</a></li>
+						</ul> 
+					</fieldset>
+				</div>
+				<!-- File ends -->
+
+				<!-- File: files/fau.html -->
+				<div class="content_container_class content_files_fau hidden">
+					<fieldset class="content_box">
+						<legend>Free &amp; Unashamed</legend>
+						<ul>
+							<li>A No-Holds-Barred Guide For The Unemployed But Not Helpless: <a href="/hosted/files/0008_UnemployedGuide.pdf">link,</a> <a href="/hosted/files/0008_UnemployedGuide.pdf.asc">Signature</a>.</li>
+							<li>How to End All Wars: <a href="/hosted/files/0007_End_All_Wars.pdf">link,</a> <a href="/hosted/files/0007_End_All_Wars.pdf.asc">Signature</a>.</li>
+							<li>Fifty Things to do Now: <a href="/hosted/files/fiftythings.html">link</a>.</li>
+							<li>Building Liberty: <a href="/hosted/files/buildingliberty.html">link</a>.</li>
+							<li>Follow up note 1: <a href="/hosted/files/followup1.html">link</a>.</li>
+							<li>A Declaration of Separation: <a href="/hosted/files/declarationseparation.html">link</a>.</li>
+							<li>An Invitation: <a href="/hosted/files/AnInvitation.html">link</a>.</li>
+							<li>We moved again: <a href="/hosted/files/movedagain.html">link</a>.</li>
+						</ul>
+					</fieldset>
+				</div>
+				<!-- File ends -->
+
+				<!-- File: files/entertainment.html -->
+				<div class="content_container_class content_files_entertainment hidden">
+					<fieldset class="content_box">
+						<legend>Entertainment</legend>
+						<ul>
+							<li>Last Trumpet Project: <a href="/hosted/files/last_trumpet/LTP.pdf">pdf</a>,
+													<a href="/hosted/files/last_trumpet/LTP.html">html</a>,
+													<a href="/hosted/files/last_trumpet/LTP.prc">prc</a>,
+													<a href="/hosted/files/last_trumpet/LTP-titlepage.jpg">Cover</a>.<br/><br/></li>
+							<li>#agora (the book): <a href="/hosted/files/agora.txt">link</a>.</li>
+							<li>A Lodging of Wayfaring Men: <a href="/hosted/files/A_Lodging_of_Wayfaring_Men.pdf">link</a>.</li>
+							<li>Alongside Night: <a href="/hosted/files/Alongside_Night_free30.pdf">link</a>.</li>
+						</ul>
+					</fieldset>
+				</div>
+				<!-- File ends -->
+
+				<!-- File: files/miscellaneous.html -->
+				<div class="content_container_class content_files_miscellaneous hidden">
+					<fieldset class="content_box">
+						<legend>Miscellaneous</legend>
+						<ul>
+							<li>Bridging the Gap: <a href="/hosted/files/bridging_the_gap.txt">link</a></li>
+							<li>Common Economic Protocols: <a href="/hosted/files/TheCommonEconomicProtocols.pdf">link</a>.</li>
+							<li>Common Economic Protocols, The Maxims: <a href="/hosted/files/TheMaxims.pdf">link</a>.</li>
+						</ul>
+					</fieldset>
+				</div>
+				<!-- File ends -->
+
+			</div>
+			<!-- Directory ends -->
+
+			<!-- Directory: agorairc -->
+			<div class="page_content content_agorairc">
+				<input type="hidden" class="page_name" name="page_name" value=".content_agorairc" />
+				<fieldset class="content_menu"><legend>Agora IRC:</legend>
+					<div>
+						<ul>
+							<li><a href="/agorairc/" class="page_trigger"><span class="hash">&#8658;</span>About</a></li>
+							<li><a href="/agorairc/connect.html" class="page_trigger"><span class="hash">&#8658;</span>Connect to the Server</a></li>
+							<li><a href="/agorairc/webirc.html" class="page_trigger"><span class="hash">&#8658;</span>WebIRC</a></li>
+							<li><a href="/agorairc/rulesnotes.html" class="page_trigger"><span class="hash">&#8658;</span>Rules &amp; Notes</a></li>
+							<li><a href="/agorairc/ircdebates.html" class="page_trigger"><span class="hash">&#8658;</span>How to debate on IRC</a></li>
+							<li><a href="/agorairc/donations.html" class="page_trigger"><span class="hash">&#8658;</span>Donations</a></li>
+						</ul>
+					</div>
+				</fieldset>
+				<!-- File: agorairc/index.html -->
+				<div class="content_container_class content_agorairc_index index">
+					<fieldset class="content_box">
+						<legend>#Agora IRC Server</legend>
+						Since 2008 Anarplex.net operates an IRC Server for agorists, crypto-anarchists, cypherpunks, second realmers, crypto-tribalists, ...<br/>
+						It was inspired by some leftovers of the Invisible IRC Project community, and two former members funded the initial setup: eCache and Free &amp; Unashamed. By now it has attracted an interesting group of people that hang out and conduct business there.<br/>
+						The server offers all the usual IRC services, like nickserv, chanserv, memoserv as well as the anarplex link bot (#anarbot) in the main channel #agora.
+					</fieldset>
+				</div>
+				<!-- File ends -->
+
+				<!-- File: agorairc/connect.html -->
+				<div class="content_container_class content_agorairc_connect hidden">
+					<fieldset class="content_box">
+						<legend>Connect to the Server</legend>
+						The IRC Server is available through Clearnet, I2P, Tor and CHAVPN.
+						Please choose one of the darknet methods (that is, not clearnet) if you intend to use the server regularly.
+					</fieldset>
+					<fieldset class="content_box">
+						<legend>Connect from the Clearnet</legend>
+						Connect directly (via Chatzilla, etc.): <a href="ircs://agora.anarplex.net:14716/#agora">ircs://agora.anarplex.net:14716/#agora</a>.<br/><br/>
+						Host: agora.anarplex.net<br/>
+						Port: 14716<br/><br/>
+						Connecting requires SSL, the certificate might be expired (which is not a problem unless you sell SSL certificates).
+					</fieldset>
+					<fieldset class="content_box">
+						<legend>Connect to Tor hidden service</legend>
+						Connect directly (via Chatzilla, etc.): <a href="irc://cfyfz6afpgfeirst.onion:6667/#agora">irc://cfyfz6afpgfeirst.onion:6667/#agora</a>.<br/><br/>
+						Host: cfyfz6afpgfeirst.onion<br/>
+						Port: 6667<br/><br/>
+						Connection is already encrypted by Tor, so do NOT enable additional SSL for the connection.
+					</fieldset>
+					<fieldset class="content_box">
+						<legend>Connect to I2P hidden server</legend>
+						Connect directly (via Chatzilla, etc.), base-32: New Format(ECC) <a href="irc://6znzxqaxj6pnzpdr2gwlqjsosoeo2kdsxc3jzw2bbipsnwen4pza.b32.i2p/#agora">irc://[...].b32.i2p/#agora</a>,<br/> Old Format: <a href="irc://ydaal5nbvxmydnncny5esb3ipxupmpgkensow7yvhp6u7uioujna.b32.i2p/#agora">irc://[...].b32.i2p/#agora</a>.<br/>
+						Connect directly (via Chatzilla, etc.), hostname: Old format <a href="irc://agora.anarplex.i2p/#agora">irc://agora.anarplex.i2p/#agora</a>.<br/><br/>
+						Hostname: ecc-agora-anarplex.i2p (New format, ECC) (<a href="http://127.0.0.1:7657/susidns/addressbook.jsp?book=private&hostname=ecc-agora-anarplex.i2p&destination=656PkePNKYR4NaQ82~HzISA8bKGQy0jZa1KDwW7Le6RuSYLtScowqE1C~5htlFgRsdFIVso1IVvhH8PeoxzetkTBD7~M47DzyMqUpi5RtsqEzXVx-97f5rFc9eYgyzyeMH1QB1uWS0Dp1wL41I18~NoVgq2szNFXCEsMlYDpi5EUkI4-tdbAUgi3ok9geAHQVsPIuvvlavuQKlArScNvlq8ua7VK7YPTdH-TtmLEXU~eZr8Vgtkl7VoP4yQ41xu-XeUKB5x7ZxMJ0M~rRcDzcljpQQ~F7fzC~5uXrGq9Yku6yG7jIJLc0Xo-WwC2zoI6SZDxAqZL~73AbDuY8VpQlQEnZHUUuWgR9rzudWMuqV5VZLSjXSo~xBZb3ZliurGChTEpXBr9css9uJUxcXbeb~iaOIsu-DvMP3k8yS7w2rInBABHokHYIiiIx6FDZx6mP-zmVwwKDSJde2RfSBxo8JUeI4B~Q6FdausKQdEdxkkaPcjnL74wYOfaZLHLNfnPBQAIAAMAADYL77s=#add">Add to your address-book</a>)<br/><br/>
+						Base-32 address: 6znzxqaxj6pnzpdr2gwlqjsosoeo2kdsxc3jzw2bbipsnwen4pza.b32.i2p<br/><br/>
+						Hostname: agora.anarplex.i2p (Old format) (<a href="http://127.0.0.1:7657/susidns/addressbook.jsp?book=private&hostname=agora.anarplex.i2p&destination=KJYceRO6ceqPoVNetVjrzIpwkcemXEcGNvk5qPphYgl5ScqivSOVRVbk17hOoMrblUnBXI6mnMHWHxlDIyf4uOM0IlbqtP0oHhdFBBB07NaYms~bdPvFTuj585e6rnczAuToF6HBomf6BfQHNQIru-LQD0IXvqcR8EHU4kJyxpp-nqFqrvsV9eJTmhWHwuSOXU2ohC9eDnU0EWk29JkszkzO-78UGf7y1UlPk1qotkyqu3pZYFdUQ7xpUGVydChMEoinRuEK~GouvxBHh0m8dvxITVi-TGqMGrJEz-YYOl1rjzu19fwiSJGaqrExZccTmhDrte-TdQjBmfZTpu2dkjlTNrANvxsrysa42cJP10Kmy~dpeFsg1CACdHFmvBbmQeY12KuHlXiGrkuPp9ElZ4vQO-ynzz~~R5ledaWfH5S8eo0miGFN7bj53RLpbFWzShylOGRj5L8In85tccp~xfcZ1fVGSLmbQUpNRwMkQz8Oo-d5e8CRbdjH1~4VjrvwAAAA#add">Add to your address-book</a>)<br/>
+						Base-32 address: ydaal5nbvxmydnncny5esb3ipxupmpgkensow7yvhp6u7uioujna.b32.i2p<br/><br/>
+						Connection is already encrypted by I2P, so do NOT enable additional SSL for the connection.
+					</fieldset>
+					<fieldset class="content_box">
+						<legend>Connect to CHAVPN Location Agnostic Server</legend>
+						Connect directly (via Chatzilla, etc.): <a href="irc://172.31.254.81:16667/#agora">irc://172.31.254.81:16667/#agora</a>.<br/><br/>
+						Host: 172.31.254.81<br/>
+						Port: 16667<br/><br/>
+						This port is unencrypted, so please do NOT enable SSL.
+					</fieldset>
+				</div>
+				<!-- File ends -->
+
+				<!-- File: agorairc/rulesnotes.html -->
+				<div class="content_container_class content_agorairc_rulesnotes hidden">
+					<fieldset class="content_box">
+						<legend>Rules</legend>
+						Please be aware that there are a few rules to be kept in mind when using our server:
+						<ol>
+							<li>This server is private property - respect it.</li>
+							<li>This place is for mature, productive people. Others are requested to leave.</li>
+							<li>This is a digital country, leave your own laws at home.</li>
+							<li>Do NOT advocate violence except for direct self-defense in the public channels.</li>
+						</ol>
+					</fieldset>
+					<fieldset class="content_box">
+						<legend>Notes</legend>
+						Please keep in mind:
+						<ul>
+							<li>Register your nick with nickserv (/msg nickserv help)</li>
+            				<li>This server is set up behind a cascade of relays, please use an anonymizer anyways</li>
+            				<li>We strongly encourage to use an OTR-capable IRC client for private chats</li>
+            				<li>Please join the main channel: #agora</li>
+            			</ul>
+					</fieldset>
+				</div>
+				<!-- File ends -->
+
+
+				<!-- File: agorairc/ircdebates.html -->
+				<div class="content_container_class content_agorairc_ircdebates hidden">
+					<fieldset class="content_box">
+						<legend>Why a HowTo on debating on IRC</legend>
+						As with any medium IRC has its own character and properties that influence the
+						way conversations flow and are conducted. This makes a specific way of signalling
+						important, since on IRC nobody can see your facial expressions or gestures. This 
+						often leads to confusing and chaotic posting that does not help any conversation.
+						For this reason, there are a few simple rules and signals that can improve IRC
+						communication for everybody, making it more profitable and fun.
+					</fieldset>
+					<fieldset class="content_box">
+						<legend>Preparation</legend>
+						<ol>
+							<li>Switch on timestamps for your chat client.</li>
+							<li>Get familiar with ignore list support for your client.</li>
+							<li>Get a tea/coffee/drink.</li>
+							<li>Relaxi and focus.</li>
+						</ol>
+					</fieldset>
+					<fieldset class="content_box">
+						<legend>CheatSheet</legend>
+						All following signals are single line and must appear on the line by themselves.
+						<ul>
+							<li>&nbsp;.&nbsp;&nbsp;&nbsp; End a post and give voice to next participant</li>
+							<li>&nbsp;.?&nbsp;&nbsp; Ask if post is completed and just missing the dot</li>
+							<li>&nbsp;+!&nbsp;&nbsp; Raise hand to make a post</li>
+							<li>&nbsp;+?&nbsp;&nbsp; Raise hand to ask a question of understanding on current post</li>
+							<li>&nbsp;-!&nbsp;&nbsp; Lower hand to NOT make a post</li>
+							<li>&nbsp;-?&nbsp;&nbsp; Lower hand to NOT ask a question</li>
+							<li>&nbsp;-&nbsp;&nbsp;&nbsp; Lower hand to not do anything at all</li>
+							<li>&nbsp;+a&nbsp;&nbsp; Signal agreement to current post</li>
+							<li>&nbsp;-a&nbsp;&nbsp; Signal disagreement to current post</li>
+            					</ul>
+					</fieldset>
+					<fieldset class="content_box">
+						<legend>Rules for smooth debates</legend>
+						<ol>
+							<li>Before speaking, listen for at least a few posts and ask active participants for 
+								context over <b>private</b> message.</li>
+							<li>Do not interrupt.</li>
+							<li>Posts must end with a dot <b>&quot;.&quot;</b> on a single line.</li>
+							<li>Posts always end when no new line is send within one minute. Not ending a post 
+								with <b>&quot;.&quot;</b> is punishable.</li>
+							<li>To participate, raise your hand by sending on a single line a plus (<b>&quot;+&quot;</b> ) followed 
+								by the type of post you would like to make:
+								<ol>
+									<li>To respond to a previous post, send <b>&quot;!&quot;</b> (that is, send 
+										<b>&quot;+!&quot;</b>).</li>
+									<li>To ask a question of understanding to a post, send  <b>&quot;?&quot;</b> (that is, 
+										send <b>&quot;+?&quot;</b> ).</li>
+								</ol>
+								</li>
+							<li>To withdraw your raised hand, send a single line with <b>&quot;-&quot;</b> followed by the type of 
+								post (<b>&quot;-!&quot;</b> or <b>&quot;-?&quot;</b> ) or a dash without type to withdraw 
+								any raised hand.</li>
+							<li> Raised hands have right to speak in the order they were raised. They must follow promptly 
+								(within 30sec) or the position is given to the next person. Questions are served first, 
+								followed by short response by the previous poster. Afterwards, other posts may be made.</li>
+							<li>Communication that is off-topic is not allowed.</li>
+							<li>To make a post that is off-topic or does not expect a reply, the post must be short (30 
+								characters maximum) and must be enclosed in brackets <b>&quot;[]&quot;</b> .</li>
+							<li>Agreement or disagreement may be signaled anytime by a single line containing 
+								<b>&quot;+a&quot;</b> (agree) or <b>&quot;-a&quot;</b>  (disagree).</li>
+							<li>Precede your posts with the list of active participants (that is, previous posters), or at 
+								least the last poster you refer to.</li>
+							<li>Do not react to posters that do not follow above rules, maybe even by putting them on your 
+								ignore list.</li>
+							<li><b>Never</b> react to trolls (people that want to provoke emotional responses/division/repetition/anger).</li>
+							<li>Reacting to trolling is punishable.</li>
+							<li>Wait a considerable amount of time before reposting. Flooding or repeating yourself frequently
+								is punishable.</li>
+							<li>If you participate in a discussion, be available to send backlog or answer questions in <b>private</b>
+								messages for newly arriving or users that lost their connection.</li>
+							<li>Please make sure to signal to other participants when you will become unavailable during a
+								conversation, either by sending <b>&quot;afk&quot;</b> (away from keyboard), <b>&quot;brb&quot;</b> 
+								(be right back), <b>&quot;bbl&quot;</b> "bbl" (be back later) or similar.</li>
+						</ol>
+					</fieldset>
+				</div>
+				<!-- File ends -->
+
+
+				<!-- File: agorairc/webirc.html -->
+				<div class="content_container_class content_agorairc_webirc hidden">
+					<fieldset class="content_box">
+						<legend>WebIRC</legend>
+						The IRC server can also be reached via the WebIRC gateway, which only requires a browser to connect:
+						<a href="/webirc/" target="_blank">https://anarplex.net/webirc/</a>.
+					</fieldset>
+				</div>
+				<!-- File ends -->
+
+				<!-- File: agorairc/donations.html -->
+				<div class="content_container_class content_agorairc_donations hidden">
+					<fieldset class="content_box">
+						<legend>Donations</legend>
+						Donations are welcome to:
+						<ul>
+              				<li>Pecunix account: "smuggler@staff.anarplex.net"</li>
+              				<li>Bitcoin address: 12qvastA6FVod8L45Q3RPD8whbzvrZhxcQ</li>
+              				<li>Cash to our staff at the conferences we speak at</li>
+              			</ul>
+					</fieldset>
+					<fieldset class="content_box">
+						<legend>Thank you!!!</legend>
+						Donations so far (FILO, last update 2016-07-14): <br/>
+					- Team Salvation BTC 1 (!!! ~ 600 EUR) <br/>
+					- frank BTC 0.05324043 <br/>
+              				- anonymous EUR 20 <br/>
+              				- plato BTC 1.20 <br/>
+              				- agoristradio BTC 1.00 <br/>
+				            - plato BTC 0.40 <br/>
+				            - Nad BTC 8.00 <br/>
+				            - brznbtni BTC 2.674 <br/>
+				            - plato BTC 4.20 <br/>
+				            - bruzum BTC 1.337 <br/>
+				            - (no name given) BTC 2.03 <br/>
+				            - (no name given) EUR 20 <br/>
+				            - RichardWeiss BTC 2.0 <br/>
+				            - hamacki EUR 40.00 <br/>
+				            - voodoo BTC 1.00 <br/>
+				            - LokeRundt BTC 1.75 <br/>
+				            - plato BTC 9.88 <br/>
+				            - johnpeters BTC 1.0 <br/>
+				            - cosmicpussy BTC 7.0 <br/>
+				            - mikeG BTC 1.0 <br/>
+				            - peter GAG 31.1 <br/>
+				            - mids GAU 1.99 <br/>
+				            - shiz GAU 2.2 <br/>
+				            - P. Mason GAG 62.2 <br/>
+				            - andrew GAG 31.1 <br/>
+				            - johnpeters US$ 28 <br/>
+				            - jackstraw GAU 6.24 <br/>
+				            - billstclair US$ 22 <br/>
+				            - mids US$ 25 <br/>
+				            - Hiro/Metropipe US$ 25 <br/>
+				            - FaU US$ 1500 <br/>
+				            - eCache US$ 500  <br/>
+				    	Thanks!
+					</fieldset>
+				</div>
+				<!-- File ends -->
+
+			</div>
+			<!-- Directory ends -->
+
+			<!-- Pages end -->
+			<div class="page_content content_notfound">
+				<input type="hidden" class="page_name" name="page_name" value=".content_notfound" />
+
+				<div class="content_container_class content_notfound_index index">
+					<fieldset class="content_box">
+						<legend>404 - Not Found</legend>
+						The page you requested is not available.
+					</fieldset>
+				</div>
+			</div>
+
+		</div>
+	</body>
+</html>
+

@@ -1,0 +1,310 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Anarplex</title>
+    <link>/</link>
+    <description>Recent content on Anarplex</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 08 Nov 2018 20:34:54 +0000</lastBuildDate><atom:link href="/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Connect to the server</title>
+      <link>/agorairc/connect/</link>
+      <pubDate>Thu, 08 Nov 2018 20:34:54 +0000</pubDate>
+      
+      <guid>/agorairc/connect/</guid>
+      <description>Connect to the Server The IRC Server is available through Clearnet, I2P (disabled currently, will be fixed), Tor and CHAVPN. Please choose one of the darknet methods (that is, not clearnet) if you intend to use the server regularly.
+ Connect from the Clearnet Connect directly (via Chatzilla, etc.): ircs://agora.anarplex.net:14716/#agora.
+Host: agora.anarplex.net
+Port: 14716
+Connecting requires SSL, the certificate might be expired (which is not a problem unless you sell SSL certificates).</description>
+    </item>
+    
+    <item>
+      <title>Crypto-Tribal</title>
+      <link>/files/cryptotribals/</link>
+      <pubDate>Thu, 08 Nov 2018 20:34:54 +0000</pubDate>
+      
+      <guid>/files/cryptotribals/</guid>
+      <description>Crypto-Tribal writings  The Treasure which is Privacy: link. Aristocracy of Action: link, original. Aristokratie der Tat, deutsch: TXT. Toward a Digital Private Economy: link. Two Realms: link. A Lodging of Wayfaring Men: link.  </description>
+    </item>
+    
+    <item>
+      <title>Second Realm</title>
+      <link>/projects/secondrealm/</link>
+      <pubDate>Thu, 08 Nov 2018 20:34:54 +0000</pubDate>
+      
+      <guid>/projects/secondrealm/</guid>
+      <description>Second Realm After Second Realm has decided to not operate its own website any longer, we moved the wiki and resources to anarplex.
+ Second Realm - The booklet The original introductory blog-post: link  </description>
+    </item>
+    
+    <item>
+      <title>Links of interest</title>
+      <link>/hosted/links/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/hosted/links/</guid>
+      <description>Links of interest  dropgangs, or the future of darknet markets digital money and dbcs cypherlock - how long until your keys expire? fog of cryptowar Tracking the Silk Road - Lessons for darknet services Anonymity - Online and Offline - Part I Anonymity – Online and Offline – Part II No place to hide. Anonymity - Online and Offline - Part III Lessons learned. Anonymity - Online and Offline – Part IV Secure and professional Bitcoin OTC exchanges Necessary conditions for the long-term success of Bitcoin Global Spying: Realistic Probabilities In Modern Signals Intelligence   </description>
+    </item>
+    
+    <item>
+      <title>Reality Exploit Radio</title>
+      <link>/hosted/rer/</link>
+      <pubDate>Sun, 13 Jan 2019 00:34:54 +0000</pubDate>
+      
+      <guid>/hosted/rer/</guid>
+      <description>Reality Exploit Radio What happens when five guys entrenched in the disobedient underground come together to discuss current events from the realms of crime, intelligence, computer security and privacy? You get:
+Reality Exploit Radio
+WARNING: It might be illegal to possess or listen to these recordings in your jurisdiction!
+(Historical archive, RER is not produced anymore):
+ Download episode (67233097 bytes, 3483 seconds) Download episode (71881704 bytes, 3852 seconds) Download episode (51524540 bytes, 3227 seconds) Download episode (67201304 bytes, 4209 seconds) Download episode (88163031 bytes, 5530 seconds) Download episode (57364217 bytes, 3593 seconds) Download episode (55695282 bytes, 3488 seconds) Download episode (77679936 bytes, 3600 seconds) Download episode (75697073 bytes, 3351 seconds) Download episode (86447885 bytes, 4740 seconds) Download episode (76216320 bytes, 3447 seconds) Download episode (69167104 bytes, 3717 seconds) Download episode (61546496 bytes, 2788 seconds) Download episode (63868928 bytes, 2979 seconds) Download episode (88847635 bytes, 3952 seconds) Download episode (51200266 bytes, 2352 seconds) Download episode (58096108 bytes, 2624 seconds) Download episode (50296608 bytes, 2264 seconds) Download episode (53151217 bytes, 2360 seconds)   </description>
+    </item>
+    
+    <item>
+      <title>RER</title>
+      <link>/projects/rer/</link>
+      <pubDate>Thu, 08 Nov 2018 20:34:54 +0000</pubDate>
+      
+      <guid>/projects/rer/</guid>
+      <description>Reality Exploit Roundtable Reality Exploit Roundtable is a podcast published by Agoristradio.com. Anarplex hosts a mirror of it here:
+ Mirror: Reality Exploit Roundtable  </description>
+    </item>
+    
+    <item>
+      <title>Second Realm</title>
+      <link>/files/secondrealm/</link>
+      <pubDate>Thu, 08 Nov 2018 20:34:54 +0000</pubDate>
+      
+      <guid>/files/secondrealm/</guid>
+      <description>Second Realm  Markdown: link HTML: link PDF: link ePub: link Mobi: link The original introductory blog-post: link  If you like this book, please send us some Bitcoin to: 1DrjUiCT4Wzij8hLYBTYmfPubZMNf2PubU</description>
+    </item>
+    
+    <item>
+      <title>LoTNV / RuleScaping</title>
+      <link>/files/rulescape/</link>
+      <pubDate>Thu, 08 Nov 2018 20:34:54 +0000</pubDate>
+      
+      <guid>/files/rulescape/</guid>
+      <description>LoTNV / RuleScaping LoTNV (Lodging of the Trans-National Vanguard) was a project that researched alternative architecture and rulescaping. It has now become part of other projects and thus the website was abandoned. You find their central writings here:
+ A Networked Tribe of Minds: Who we are. link Discovering the Future by Experiment: How We Live. link Agreements for Networked Societies: Beyond Law. link RuleScape: Dynamic peaceful order in societies. link  </description>
+    </item>
+    
+    <item>
+      <title>Register your Nickname</title>
+      <link>/agorairc/register/</link>
+      <pubDate>Thu, 08 Nov 2018 20:34:54 +0000</pubDate>
+      
+      <guid>/agorairc/register/</guid>
+      <description>Register your nickname Many features of the server can only be used with a registered nickname. To register your nickname, follow these two simple steps:
+ Register your nick on irc: /msg nickserv register &amp;lt;password&amp;gt;
+Replace &amp;lt;password&amp;gt; with a secure password of your choosing. Confirm your nick via our website,
+Tor: http://y5fmhyqdr6r7ddws.onion/nickconfirm/confirm
+Clearnet https://anarplex.net/nickconfirm/confirm  Failing to register can result in not being able to join certain channels, not have private conversations with certain other users, or not even be able to use any service during times when we raise the defcon.</description>
+    </item>
+    
+    <item>
+      <title>Server side ignore</title>
+      <link>/agorairc/serverignore/</link>
+      <pubDate>Thu, 08 Nov 2018 20:34:54 +0000</pubDate>
+      
+      <guid>/agorairc/serverignore/</guid>
+      <description>Server side ignore Due to the problem of spamming on anonymous IRC servers, all users by default have server side ignore set.
+This means that only people on your accept list are able to private message you. You can remove this setting from your session by removing mode g.
+Alternatively you can remove mode g and set mode G to automatically accept messages from users you share a channel with.</description>
+    </item>
+    
+    <item>
+      <title>X-Posts</title>
+      <link>/projects/xposts/</link>
+      <pubDate>Thu, 08 Nov 2018 20:34:54 +0000</pubDate>
+      
+      <guid>/projects/xposts/</guid>
+      <description>About X-Posts X-Posts are cross-posts from anarplex affiliated writers. They are stored here mostly to keep them accessible. Since they are of varying topics they don&amp;rsquo;t really fit the Files category.
+ X-Posts By J. Logan
+ Reality-Fiction Continuum Scribbles: Thinking about humans – C4T Scribbles: Common Sense on Truth  </description>
+    </item>
+    
+    <item>
+      <title>Free &amp; Unashamed</title>
+      <link>/files/fau/</link>
+      <pubDate>Thu, 08 Nov 2018 20:34:54 +0000</pubDate>
+      
+      <guid>/files/fau/</guid>
+      <description>Free &amp;amp; Unashamed  A No-Holds-Barred Guide For The Unemployed But Not Helpless: link, Signature. How to End All Wars: link, Signature. Fifty Things to do Now: link. Building Liberty: link. Follow up note 1: link. A Declaration of Separation: link. An Invitation: link. We moved again: link.  </description>
+    </item>
+    
+    <item>
+      <title>Rules &amp; Notes</title>
+      <link>/agorairc/rules/</link>
+      <pubDate>Thu, 08 Nov 2018 20:34:54 +0000</pubDate>
+      
+      <guid>/agorairc/rules/</guid>
+      <description>Rules Please be aware that there are a few rules to be kept in mind when using our server:
+ This server is private property - respect it. This place is for mature, productive people. Others are requested to leave. This is a digital country, leave your own laws at home.  Do NOT advocate violence except for direct self-defense in the public channels.
+ Notes Please keep in mind:</description>
+    </item>
+    
+    <item>
+      <title>Entertainment</title>
+      <link>/files/entertainment/</link>
+      <pubDate>Thu, 08 Nov 2018 20:34:54 +0000</pubDate>
+      
+      <guid>/files/entertainment/</guid>
+      <description>Entertainment  Last Trumpet Project: pdf, html, prc, Cover. #agora (the book): link. A Lodging of Wayfaring Men: link. Alongside Night: link.  </description>
+    </item>
+    
+    <item>
+      <title>How to debate on IRC</title>
+      <link>/agorairc/howtodebate/</link>
+      <pubDate>Thu, 08 Nov 2018 20:34:54 +0000</pubDate>
+      
+      <guid>/agorairc/howtodebate/</guid>
+      <description>Why a HowTo on debating on IRC As with any medium IRC has its own character and properties that influence the way conversations flow and are conducted. This makes a specific way of signalling important, since on IRC nobody can see your facial expressions or gestures. This often leads to confusing and chaotic posting that does not help any conversation. For this reason, there are a few simple rules and signals that can improve IRC communication for everybody, making it more profitable and fun.</description>
+    </item>
+    
+    <item>
+      <title>IRC Bouncer</title>
+      <link>/services/bouncer/</link>
+      <pubDate>Thu, 08 Nov 2018 20:34:54 +0000</pubDate>
+      
+      <guid>/services/bouncer/</guid>
+      <description>IRC Bouncer We run a (paid) IRC Bouncer service for the #agora Anarple IRC server, reachable through Tor only.
+A bouncer allows the user to always stay connected to the IRC server, and get backlog messages even if the local client was offline.
+If you are interested, talk to us.
+ </description>
+    </item>
+    
+    <item>
+      <title>Repbin</title>
+      <link>/services/repbin/</link>
+      <pubDate>Thu, 08 Nov 2018 20:34:54 +0000</pubDate>
+      
+      <guid>/services/repbin/</guid>
+      <description>Repbin Repbin is a command-line pastebin service that is distributed, encrypted, and anonymous. It can be used to share texts easily, by just piping them into a command. Getting them is just executing a command with an URL to locate the intended text.
+Repbin can also be used to share files, send messages anonymously, or even set up a chain of message mixes.
+Lastly, Repbin can be used to operate very anonymous, very hard to trace RPC services - for which it was initially developed.</description>
+    </item>
+    
+    <item>
+      <title>Donations</title>
+      <link>/agorairc/donations/</link>
+      <pubDate>Thu, 08 Nov 2018 20:34:54 +0000</pubDate>
+      
+      <guid>/agorairc/donations/</guid>
+      <description>Donations Donations are welcome to:
+Bitcoin address: 12qvastA6FVod8L45Q3RPD8whbzvrZhxcQ
+Cash to our staff at the conferences we speak at.
+ Thank you!!! &#34; Donations so far (FILO, last update 2016-07-14):  Team Salvation BTC 1 (!!! ~ 600 EUR) frank BTC 0.05324043 anonymous EUR 20 plato BTC 1.20 agoristradio BTC 1.00 plato BTC 0.40 Nad BTC 8.00 brznbtni BTC 2.674 plato BTC 4.20 bruzum BTC 1.337 (no name given) BTC 2.03 (no name given) EUR 20 RichardWeiss BTC 2.</description>
+    </item>
+    
+    <item>
+      <title>Miscellaneous</title>
+      <link>/files/misc/</link>
+      <pubDate>Thu, 08 Nov 2018 20:34:54 +0000</pubDate>
+      
+      <guid>/files/misc/</guid>
+      <description>Miscellaneous  Bridging the Gap: link. Common Economic Protocols: link. Common Economic Protocols, The Maxims: link.  </description>
+    </item>
+    
+    <item>
+      <title>Change of addresses</title>
+      <link>/log/10/</link>
+      <pubDate>Sat, 11 Dec 2021 00:13:37 +0000</pubDate>
+      
+      <guid>/log/10/</guid>
+      <description>We&amp;rsquo;ve changed our i2p and tor addresses. Please update to connect.
+The i2p entry should now be more reliable. Thank you @AnonymousDonors.</description>
+    </item>
+    
+    <item>
+      <title>Website updates</title>
+      <link>/log/09/</link>
+      <pubDate>Sun, 13 Jan 2019 00:19:29 +0000</pubDate>
+      
+      <guid>/log/09/</guid>
+      <description>We have updated various parts of our website, added links to hosted sites and more information about services running.</description>
+    </item>
+    
+    <item>
+      <title>Server move!</title>
+      <link>/log/08/</link>
+      <pubDate>Fri, 11 Jan 2019 00:19:29 +0000</pubDate>
+      
+      <guid>/log/08/</guid>
+      <description>Finally, we moved away from the hardware we had for 5 years now and set up a new system. A lot of changes were made in the process. The Tor hidden service is now generally faster and more stable, we have two clearnet gateways to the IRC. We switched IRC server and services software. Oh, and we&amp;rsquo;re running on OpenBSD now.
+We have not ported nickname and channel registrations, so please re-register and make sure that you have understood the new registration process.</description>
+    </item>
+    
+    <item>
+      <title>I2P</title>
+      <link>/notes/i2p/</link>
+      <pubDate>Thu, 08 Nov 2018 00:34:54 +0000</pubDate>
+      
+      <guid>/notes/i2p/</guid>
+      <description>I2P Anarplex runs several I2P eepsite destinations. They are:
+For web access: anarplex.i2p 2pei6r2naufy54vby3iqyezyqdebvphe2kf3sklvuhhj5id7h5lq.b32.i2p
+For IRC access: agora.anarplex.i2p	mchwn4yilm37nctwsxysuk37qhb4uroksyrofxhyz332ck4nkn7q.b32.i2p
+If you are running i2pd add these lines to your ~/.i2pd/addressbook/addresses.csv :
+ agora.anarplex.i2p,mchwn4yilm37nctwsxysuk37qhb4uroksyrofxhyz332ck4nkn7q anarplex.i2p,2pei6r2naufy54vby3iqyezyqdebvphe2kf3sklvuhhj5id7h5lq
+ And this to your ~.i2pd/tunnels.conf :
+ [agora.anarplex-out] type = client address = 127.0.0.1 port = 6668 #destination = agora.anarplex.i2p destination = mchwn4yilm37nctwsxysuk37qhb4uroksyrofxhyz332ck4nkn7q.b32.i2p keys = agora.anarplex.dat
+ You can then connect your IRC client to 127.</description>
+    </item>
+    
+    <item>
+      <title>Our keyfile has been updated</title>
+      <link>/log/07/</link>
+      <pubDate>Thu, 19 Feb 2015 04:19:29 +0000</pubDate>
+      
+      <guid>/log/07/</guid>
+      <description>See new keyfile here</description>
+    </item>
+    
+    <item>
+      <title>New service: Source Code Hosting</title>
+      <link>/log/06/</link>
+      <pubDate>Thu, 19 Feb 2015 04:18:21 +0000</pubDate>
+      
+      <guid>/log/06/</guid>
+      <description>We have started a new service to provide fossil-based source code hosting in the darknets. See here for links: DNCA.</description>
+    </item>
+    
+    <item>
+      <title>Mirror for Reality Exploit Roundtable</title>
+      <link>/log/04/</link>
+      <pubDate>Mon, 25 Feb 2013 04:15:51 +0000</pubDate>
+      
+      <guid>/log/04/</guid>
+      <description>Often missed, RER is now mirrored by anarplex.net, until the traffic load becomes to high for our system. It can be found here: RER Mirror.</description>
+    </item>
+    
+    <item>
+      <title>SecondRealm.net</title>
+      <link>/log/03/</link>
+      <pubDate>Mon, 25 Feb 2013 04:14:52 +0000</pubDate>
+      
+      <guid>/log/03/</guid>
+      <description>The SecondRealm.net website is about to be closed. Anarplex has saved the content and wiki to: Second Realm</description>
+    </item>
+    
+    <item>
+      <title>LoTNV moved </title>
+      <link>/log/02/</link>
+      <pubDate>Mon, 25 Feb 2013 04:13:26 +0000</pubDate>
+      
+      <guid>/log/02/</guid>
+      <description>Since LoTNV is not operational anymore, the main content was moved to anarplex: LoTNV / RuleScaping</description>
+    </item>
+    
+    <item>
+      <title>New website! &#43;&#43;&#43; New website!</title>
+      <link>/log/01/</link>
+      <pubDate>Sun, 24 Feb 2013 04:11:18 +0000</pubDate>
+      
+      <guid>/log/01/</guid>
+      <description>We finally made it. The new website is available, using a javacript based CMS for best usability over slow (high latency) darknets. We will also incorporate the secondrealm.net resources as well as a client&amp;rsquo;s website (lotnv.net) in the near future. Stay tuned.</description>
+    </item>
+    
+  </channel>
+</rss>

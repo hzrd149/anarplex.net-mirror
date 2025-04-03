@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Agora IRC on Anarplex</title>
+    <link>/agorairc/</link>
+    <description>Recent content in Agora IRC on Anarplex</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 08 Nov 2018 20:34:54 +0000</lastBuildDate><atom:link href="/agorairc/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Connect to the server</title>
+      <link>/agorairc/connect/</link>
+      <pubDate>Thu, 08 Nov 2018 20:34:54 +0000</pubDate>
+      
+      <guid>/agorairc/connect/</guid>
+      <description>Connect to the Server The IRC Server is available through Clearnet, I2P (disabled currently, will be fixed), Tor and CHAVPN. Please choose one of the darknet methods (that is, not clearnet) if you intend to use the server regularly.
+ Connect from the Clearnet Connect directly (via Chatzilla, etc.): ircs://agora.anarplex.net:14716/#agora.
+Host: agora.anarplex.net
+Port: 14716
+Connecting requires SSL, the certificate might be expired (which is not a problem unless you sell SSL certificates).</description>
+    </item>
+    
+    <item>
+      <title>Register your Nickname</title>
+      <link>/agorairc/register/</link>
+      <pubDate>Thu, 08 Nov 2018 20:34:54 +0000</pubDate>
+      
+      <guid>/agorairc/register/</guid>
+      <description>Register your nickname Many features of the server can only be used with a registered nickname. To register your nickname, follow these two simple steps:
+ Register your nick on irc: /msg nickserv register &amp;lt;password&amp;gt;
+Replace &amp;lt;password&amp;gt; with a secure password of your choosing. Confirm your nick via our website,
+Tor: http://y5fmhyqdr6r7ddws.onion/nickconfirm/confirm
+Clearnet https://anarplex.net/nickconfirm/confirm  Failing to register can result in not being able to join certain channels, not have private conversations with certain other users, or not even be able to use any service during times when we raise the defcon.</description>
+    </item>
+    
+    <item>
+      <title>Server side ignore</title>
+      <link>/agorairc/serverignore/</link>
+      <pubDate>Thu, 08 Nov 2018 20:34:54 +0000</pubDate>
+      
+      <guid>/agorairc/serverignore/</guid>
+      <description>Server side ignore Due to the problem of spamming on anonymous IRC servers, all users by default have server side ignore set.
+This means that only people on your accept list are able to private message you. You can remove this setting from your session by removing mode g.
+Alternatively you can remove mode g and set mode G to automatically accept messages from users you share a channel with.</description>
+    </item>
+    
+    <item>
+      <title>Rules &amp; Notes</title>
+      <link>/agorairc/rules/</link>
+      <pubDate>Thu, 08 Nov 2018 20:34:54 +0000</pubDate>
+      
+      <guid>/agorairc/rules/</guid>
+      <description>Rules Please be aware that there are a few rules to be kept in mind when using our server:
+ This server is private property - respect it. This place is for mature, productive people. Others are requested to leave. This is a digital country, leave your own laws at home.  Do NOT advocate violence except for direct self-defense in the public channels.
+ Notes Please keep in mind:</description>
+    </item>
+    
+    <item>
+      <title>How to debate on IRC</title>
+      <link>/agorairc/howtodebate/</link>
+      <pubDate>Thu, 08 Nov 2018 20:34:54 +0000</pubDate>
+      
+      <guid>/agorairc/howtodebate/</guid>
+      <description>Why a HowTo on debating on IRC As with any medium IRC has its own character and properties that influence the way conversations flow and are conducted. This makes a specific way of signalling important, since on IRC nobody can see your facial expressions or gestures. This often leads to confusing and chaotic posting that does not help any conversation. For this reason, there are a few simple rules and signals that can improve IRC communication for everybody, making it more profitable and fun.</description>
+    </item>
+    
+    <item>
+      <title>Donations</title>
+      <link>/agorairc/donations/</link>
+      <pubDate>Thu, 08 Nov 2018 20:34:54 +0000</pubDate>
+      
+      <guid>/agorairc/donations/</guid>
+      <description>Donations Donations are welcome to:
+Bitcoin address: 12qvastA6FVod8L45Q3RPD8whbzvrZhxcQ
+Cash to our staff at the conferences we speak at.
+ Thank you!!! &#34; Donations so far (FILO, last update 2016-07-14):  Team Salvation BTC 1 (!!! ~ 600 EUR) frank BTC 0.05324043 anonymous EUR 20 plato BTC 1.20 agoristradio BTC 1.00 plato BTC 0.40 Nad BTC 8.00 brznbtni BTC 2.674 plato BTC 4.20 bruzum BTC 1.337 (no name given) BTC 2.03 (no name given) EUR 20 RichardWeiss BTC 2.</description>
+    </item>
+    
+  </channel>
+</rss>

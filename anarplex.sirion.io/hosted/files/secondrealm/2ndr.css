@@ -1,0 +1,64 @@
+body {
+    width:40em; 
+    margin-left:auto; 
+	margin-right:auto;
+	font-family:Helvetica,Arial,Sans-Serif;
+	font-size:1.05em;
+/*    position:relative;*/
+}
+
+
+hr {width:20%; height:0px; margin:1.5em auto 1.5em auto; padding:0 0 0 0; border:1px black solid;}
+
+h1 {
+    margin-top:4em; 
+	border-left:0.5em black solid; 
+	padding:0.25em 0 0.25em 1em; 
+	border-bottom:1px black solid;
+	font-family:Helvetica,Arial,Sans-Serif;
+	font-size:1.75em;
+	background-color:#EEEEEE;
+}
+
+h2 {
+	margin-top: 2em;
+	padding-left:0.75em;
+	font-size:1.4em;
+}
+//#contents > ul {margin-top: 0; margin-bottom:0}
+//#contents > ul > li > ul {display:inline}
+//#contents > ul > li {display:block; height:1em;}
+#contents p {margin-top: 0; margin-bottom:0}
+
+#contents ul
+{list-style-type: none}
+#contents>ul
+{}
+#contents>ul>li 
+{}
+#contents>ul>li>ul
+{}
+#contents>ul>li>ul>li
+{}
+#contents>ul>li>ul>li>ul
+{}
+
+section#the-second-realm > h1 {
+	text-align:center; 
+	margin: 5em 0 0 0;
+	padding: 0 0 0 0;
+	border: none;
+	background-color: #ffffff;
+}
+section#book-on-strategy > h2 {
+	text-align:center;
+	margin: 0 0 0 0;
+	padding: 0 0 0 0;
+	border: none;
+}
+section#crypto-anarchy-tradecraft-taz-and-counterculture > h4 {
+	text-align:center;
+	margin: 3em 0 3em 0;
+	padding: 0 0 0 0;
+	border: none;
+}

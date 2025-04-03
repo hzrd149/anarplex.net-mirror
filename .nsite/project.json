@@ -1,0 +1,19 @@
+{
+  "relays": [
+    "wss://nostrue.com",
+    "wss://relay.damus.io",
+    "wss://relay.primal.net"
+  ],
+  "servers": [
+    "https://blossom.primal.net",
+    "https://nostr.download",
+    "https://cdn.hzrd149.com"
+  ],
+  "profile": {
+    "name": "anarplex.net-mirror",
+    "about": "A static copy of https://anarplex.sirion.io/"
+  },
+  "publishProfile": true,
+  "publishServerList": true,
+  "publishRelayList": true
+}

@@ -1,0 +1,107 @@
+
+<html lang="en-us">
+	<head>
+		<title>Logs</title>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+		
+		
+		<meta name="generator" content="Hugo 0.89.4" />
+		<link rel="stylesheet" type="text/css" href="/css/master-3.css" />
+		<link rel="alternate" type="application/rss+xml" href="/log/index.xml" title="Anarplex" />
+		</head>
+	<body>
+		<div id="page_container">
+			<div id="header_container">
+				<span class="bar" style="top:1em;">=================================================================================================================================</span>
+				<a id="home_logo" href="/"  class="page_trigger"><img src="/img/gamma-trans.png" alt="" border="0" /></a>
+				<span class="bar" style="bottom:1em;">=================================================================================================================================</span>
+
+				<div id="header_content">
+					<a href="/" id="page_heading" class="page_trigger">anarplex.net</a>
+					<div id="header_text">
+						files &amp; projects related to: crypto-tribes, phyles, crypto-anarchy, agorism<br/>
+						provider of darknet services
+					</div>
+				</div>
+
+				<div id="header_menu">
+					<ul class="menu_list">
+						<li class="menu_item menu_left"><a href="https://bbs.anarplex.net/"  class="page_trigger" id="bbs"><span class="hash">#</span>Forum</a></li>
+						<li class="menu_item menu_left"><a href="/agorairc/"  class="page_trigger" id="agorairc"><span class="hash">#</span>Agora Irc</a></li>
+						<li class="menu_item menu_left"><a href="/files/"     class="page_trigger" id="files"   ><span class="hash">#</span>Files    </a></li>
+						<li class="menu_item menu_left"><a href="/hosted/"  class="page_trigger" id="projects"><span class="hash">#</span>Hosted </a></li>
+						<li class="menu_item menu_right"><a href="/services/" class="page_trigger" id="services"><span class="hash">#</span>Services </a></li>
+						<li class="menu_item menu_right"><a href="/log/"      id="varlog"  ><span class="hash">#</span>/var/log </a></li>
+					</ul>
+				</div>		
+			</div>
+
+			<div id="content_container">
+
+
+	
+		
+		<fieldset class="content_box"><legend>2021-12-11 00:13:37 &#43;0000 UTC +++ Change of addresses +++</legend>
+			<p>We&rsquo;ve changed our i2p and tor addresses. Please update to connect.</p>
+<p>The i2p entry should now be more reliable. Thank you @AnonymousDonors.</p>
+
+		</fieldset>
+		
+		<fieldset class="content_box"><legend>2019-01-13 00:19:29 &#43;0000 UTC +++ Website updates +++</legend>
+			<p>We have updated various parts of our website, added links to hosted sites and more information about services running.</p>
+
+		</fieldset>
+		
+		<fieldset class="content_box"><legend>2019-01-11 00:19:29 &#43;0000 UTC +++ Server move! +++</legend>
+			<p>Finally, we moved away from the hardware we had for 5 years now and set up a new system. A lot of changes were made in the process. The Tor hidden service is now generally faster and more stable, we have two clearnet gateways to the IRC. We switched IRC server and services software. Oh, and we&rsquo;re running on OpenBSD now.</p>
+<p>We have not ported nickname and channel registrations, so please re-register and make sure that you have understood <a href="/agorairc/register/">the new registration process</a>.</p>
+<p>We also added new addresses for Tor (and I2P soon). Please use the new addresses from now on.</p>
+<p>Oh, and our website is now managed by hugo, so a few links might be broken, and the design slightly changed.</p>
+<p>For those interested in technical details: Anarplex runs on an AMD Epyc server as a single virtual machine which can reach the clearnet only through a VPN or through Tor. The clearnet gateways are connected by either (depends on service) VPN connections which redirect the traffic, or proxies that forward through Tor. The clearnet gateways always strip the original IP addresses from traffic before forwarding to the main server. The clearnet access VPN runs through <a href="https://secure.cryptohippie.com/">Cryptohippie</a> and uses their multi-hop and anonymous out-of-band authentication method. VPN links are rotated every day or so, and we have multiple simultanous connections to their network. Through this initial VPN we run an SSH tun/tap VPN that carries the traffic that the clearnet gateways capture. All disks and RAM on the host are encrypted, and it is under our sole control (only we have admin access).</p>
+<p>&ndash; smuggler</p>
+
+		</fieldset>
+		
+		<fieldset class="content_box"><legend>2015-02-19 04:19:29 &#43;0000 UTC +++ Our keyfile has been updated +++</legend>
+			<p>See new keyfile <a href="/keys.txt.asc">here</a></p>
+
+		</fieldset>
+		
+		<fieldset class="content_box"><legend>2015-02-19 04:18:21 &#43;0000 UTC +++ New service: Source Code Hosting +++</legend>
+			<p>We have started a new service to provide fossil-based source code hosting in the darknets. See here for links: <a href="/services/dnca.html">DNCA</a>.</p>
+
+		</fieldset>
+		
+		<fieldset class="content_box"><legend>2013-02-25 04:15:51 &#43;0000 UTC +++ Mirror for Reality Exploit Roundtable +++</legend>
+			<p>Often missed, RER is now mirrored by anarplex.net, until the traffic load becomes to high for our system. It can be found here: <a href="/projects/rer.html">RER Mirror</a>.</p>
+
+		</fieldset>
+		
+		<fieldset class="content_box"><legend>2013-02-25 04:14:52 &#43;0000 UTC +++ SecondRealm.net +++</legend>
+			<p>The SecondRealm.net website is about to be closed. Anarplex has saved the content and wiki to: <a href="/projects/secondrealm.html">Second Realm</a></p>
+
+		</fieldset>
+		
+		<fieldset class="content_box"><legend>2013-02-25 04:13:26 &#43;0000 UTC +++ LoTNV moved  +++</legend>
+			<p>Since LoTNV is not operational anymore, the main content was moved to anarplex: <a href="/files/lotnv.html">LoTNV / RuleScaping</a></p>
+
+		</fieldset>
+		
+		<fieldset class="content_box"><legend>2013-02-24 04:11:18 &#43;0000 UTC +++ New website! &#43;&#43;&#43; New website! +++</legend>
+			<p>We finally made it. The new website is available, using a javacript based CMS for best usability over slow (high latency) darknets. We will also incorporate the secondrealm.net resources as well as a client&rsquo;s website (lotnv.net) in the near future. Stay tuned.</p>
+
+		</fieldset>
+		
+	
+			</div>
+
+			<span id="permalink" class="hidden">#<a href="/">&nbsp;</a></span>
+			<div id="page_copyright">
+				copyleft 2010-2019 Staff.Anarplex || CoL: CEP-1.1, CG-1.0, G23-2.2, UMBRA-0.3 || <a href="/index.xml" title="RSS">Subscribe2RSS</a>
+			</div>
+		</div>
+	</body>
+</html>
